@@ -1,0 +1,15 @@
+*.sln
+*.db
+vs/*
+/vs/*
+*Release*
+*.pdb
+*.obj
+*.tlog*
+*.exp
+*.iobj
+*.ipdb
+*.lib
+!*.dll
+*.vcxproj
+*.filters
