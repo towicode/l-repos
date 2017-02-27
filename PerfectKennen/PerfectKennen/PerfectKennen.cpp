@@ -1,6 +1,6 @@
 #include "PluginSDK.h"
 
-PluginSetup("PerfectSupportKennen")
+PluginSetup("PerfectKennen")
 
 // Menus
 IMenu* MainMenu;
@@ -24,7 +24,7 @@ IMenu* LaneClearSettings;
 IMenu* LaneClearQSettings;
 IMenuOption* LaneClearQ;
 
-IMenu* Misc;
+IMenu* MiscKennen;
 IMenuOption* EOnTargeted;
 
 
@@ -57,7 +57,7 @@ void Menu()
 	MainMenu = GPluginSDK->AddMenu("Perfect Kennen");
 	ComboSettings = MainMenu->AddMenu("Combo Settings");
 	MixedSettings = MainMenu->AddMenu("Mixed Settings");
-	Misc = MainMenu->AddMenu("Misc");
+	MiscKennen = MainMenu->AddMenu("MiscKennen");
 	LaneClearSettings = MainMenu->AddMenu("Lane Clear Settings");
 	DrawSettings = MainMenu->AddMenu("Drawings");
 
@@ -92,7 +92,7 @@ void Menu()
 	//Draw Menu Setup
 	DrawQRange = DrawSettings->CheckBox("Draw Q Range", true);
 	DrawWRange = DrawSettings->CheckBox("Draw W Range", true);
-	EOnTargeted = Misc->CheckBox("Use E when Targeted by a spell", true);
+	EOnTargeted = MiscKennen->CheckBox("Use E when Targeted by a spell", true);
 
 }
 
@@ -307,7 +307,7 @@ PLUGIN_EVENT(void) OnSpellCast(CastedSpell const& spell)
 		//GGame->PrintChat("Spell Casted");
 		if (spell.Target_ == myHero && spell.Caster_->IsHero() && spell.Caster_->IsEnemy(myHero)) {
 
-			//	TODO anyway of telling if a spell is truely targeted or do I have to list out every spell?
+			//	TODO anyway of telling if a spell is Btruely targeted or do I have to list out every spell?
 			if (spell.Radius_ == 0) {
 
 				E->CastOnPlayer();
