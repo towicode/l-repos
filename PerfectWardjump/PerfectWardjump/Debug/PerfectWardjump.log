@@ -1,0 +1,6 @@
+﻿  PerfectWardjump.cpp
+  PluginSDK.cpp
+  Generating Code...
+c:\users\todd\documents\visual studio 2015\projects\perfectwardjump\perfectwardjump\perfectwardjump.cpp(78): warning C4715: 'InitSpells': not all control paths return a value
+     Creating library c:\users\todd\documents\visual studio 2015\Projects\PerfectWardjump\Debug\PerfectWardjump.lib and object c:\users\todd\documents\visual studio 2015\Projects\PerfectWardjump\Debug\PerfectWardjump.exp
+  PerfectWardjump.vcxproj -> c:\users\todd\documents\visual studio 2015\Projects\PerfectWardjump\Debug\PerfectWardjump.dll

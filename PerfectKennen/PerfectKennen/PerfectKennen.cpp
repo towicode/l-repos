@@ -186,8 +186,11 @@ void Combo()
 			auto target = GTargetSelector->FindTarget(QuickestKill, PhysicalDamage, 550);
 
 			if (EnemiesInRange(myHero, 549) <= 0) {
+				if (!GOrbwalking->CanMove()) {
+					GOrbwalking->SetMovementAllowed(true);
+				}
 				if (!nextAuto) {
-					if (GGame->Time() > (timeSinceLastAuto + 1)) {
+					if (GGame->Time() > (timeSinceLastAuto + .30)) {
 						for (auto minion : GEntityList->GetAllMinions(false, true, false)) {
 							if (minion != nullptr && myHero->IsValidTarget(minion, myHero->GetRealAutoAttackRange(minion))) {
 
@@ -197,7 +200,7 @@ void Combo()
 									timeSinceLastAuto = GGame->Time();
 
 									GOrbwalking->DisableNextAttack();
-
+									GOrbwalking->SetMovementAllowed(false);
 									GGame->IssueOrder(myHero, kAttackUnit, minion);
 									GGame->IssueOrder(myHero, kStop, myHero);
 									break;
@@ -205,6 +208,11 @@ void Combo()
 							}
 						}
 					}
+				}
+			}
+			else {
+				if (!GOrbwalking->CanMove()) {
+					GOrbwalking->SetMovementAllowed(true);
 				}
 			}
 		}
@@ -262,9 +270,7 @@ void DrawRanges()
 {
 	if (DrawQRange->Enabled())
 	{
-
 		GRender->DrawOutlinedCircle(GEntityList->Player()->GetPosition(), Vec4(255, 255, 0, 255), Q->Range());
-
 	}
 	if (DrawWRange->Enabled())
 	{
@@ -307,11 +313,27 @@ PLUGIN_EVENT(void) OnSpellCast(CastedSpell const& spell)
 		//GGame->PrintChat("Spell Casted");
 		if (spell.Target_ == myHero && spell.Caster_->IsHero() && spell.Caster_->IsEnemy(myHero)) {
 
-			//	TODO anyway of telling if a spell is Btruely targeted or do I have to list out every spell?
-			if (spell.Radius_ == 0) {
+			auto data = spell.Data_;
+			auto target = GSpellData->GetTarget(data);
+			auto number = GSpellData->NumberOfTargets(data);
+			std::string spellName = spell.Name_;
 
-				E->CastOnPlayer();
+			if (spellName.find("BasicAttack") != std::string::npos) {
+				return;
 			}
+
+			char array[10];
+			sprintf_s(array, "%d", number);
+
+			GGame->PrintChat("NUMBER OF TARGETS");
+			GGame->PrintChat(array);
+
+			GGame->PrintChat(target->ChampionName());
+			GGame->PrintChat("Was targeted by ");
+			GGame->PrintChat(spell.Name_);
+
+
+			E->CastOnPlayer();
 		}
 	}
 }
