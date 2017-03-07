@@ -1,0 +1,28 @@
+﻿  PerfectVeigar.cpp
+c:\users\todd\documents\visual studio 2015\projects\perfectveigar\perfectveigar\common.h(21): warning C4244: '+=': conversion from 'double' to 'float', possible loss of data
+c:\users\todd\documents\visual studio 2015\projects\perfectveigar\perfectveigar\common.h(25): warning C4305: '*=': truncation from 'double' to 'float'
+c:\users\todd\documents\visual studio 2015\projects\perfectveigar\perfectveigar\common.h(28): warning C4305: '*=': truncation from 'double' to 'float'
+c:\users\todd\documents\visual studio 2015\projects\perfectveigar\perfectveigar\common.h(32): warning C4244: '*=': conversion from 'double' to 'float', possible loss of data
+c:\users\todd\documents\visual studio 2015\projects\perfectveigar\perfectveigar\common.h(35): warning C4244: '*=': conversion from 'double' to 'float', possible loss of data
+c:\users\todd\documents\visual studio 2015\projects\perfectveigar\perfectveigar\common.h(38): warning C4244: '*=': conversion from 'double' to 'float', possible loss of data
+c:\users\todd\documents\visual studio 2015\projects\perfectveigar\perfectveigar\common.h(41): warning C4244: '*=': conversion from 'double' to 'float', possible loss of data
+c:\users\todd\documents\visual studio 2015\projects\perfectveigar\perfectveigar\common.h(44): warning C4244: '*=': conversion from 'double' to 'float', possible loss of data
+c:\users\todd\documents\visual studio 2015\projects\perfectveigar\perfectveigar\common.h(48): warning C4305: '*=': truncation from 'double' to 'float'
+c:\users\todd\documents\visual studio 2015\projects\perfectveigar\perfectveigar\common.h(54): warning C4305: '*=': truncation from 'double' to 'float'
+c:\users\todd\documents\visual studio 2015\projects\perfectveigar\perfectveigar\common.h(57): warning C4305: '*=': truncation from 'double' to 'float'
+c:\users\todd\documents\visual studio 2015\projects\perfectveigar\perfectveigar\common.h(72): warning C4244: '+=': conversion from 'double' to 'float', possible loss of data
+c:\users\todd\documents\visual studio 2015\projects\perfectveigar\perfectveigar\common.h(77): warning C4244: '+=': conversion from 'double' to 'float', possible loss of data
+c:\users\todd\documents\visual studio 2015\projects\perfectveigar\perfectveigar\common.h(82): warning C4244: '+=': conversion from 'double' to 'float', possible loss of data
+c:\users\todd\documents\visual studio 2015\projects\perfectveigar\perfectveigar\common.h(87): warning C4244: '+=': conversion from 'double' to 'float', possible loss of data
+c:\users\todd\documents\visual studio 2015\projects\perfectveigar\perfectveigar\common.h(91): warning C4305: '*=': truncation from 'double' to 'float'
+c:\users\todd\documents\visual studio 2015\projects\perfectveigar\perfectveigar\common.h(94): warning C4305: '*=': truncation from 'double' to 'float'
+c:\users\todd\documents\visual studio 2015\projects\perfectveigar\perfectveigar\common.h(98): warning C4244: '*=': conversion from 'double' to 'float', possible loss of data
+c:\users\todd\documents\visual studio 2015\projects\perfectveigar\perfectveigar\common.h(101): warning C4244: '*=': conversion from 'double' to 'float', possible loss of data
+c:\users\todd\documents\visual studio 2015\projects\perfectveigar\perfectveigar\common.h(104): warning C4244: '*=': conversion from 'double' to 'float', possible loss of data
+c:\users\todd\documents\visual studio 2015\projects\perfectveigar\perfectveigar\common.h(107): warning C4244: '*=': conversion from 'double' to 'float', possible loss of data
+c:\users\todd\documents\visual studio 2015\projects\perfectveigar\perfectveigar\common.h(110): warning C4244: '*=': conversion from 'double' to 'float', possible loss of data
+c:\users\todd\documents\visual studio 2015\projects\perfectveigar\perfectveigar\common.h(114): warning C4305: '*=': truncation from 'double' to 'float'
+c:\users\todd\documents\visual studio 2015\projects\perfectveigar\perfectveigar\common.h(120): warning C4305: '*=': truncation from 'double' to 'float'
+c:\users\todd\documents\visual studio 2015\projects\perfectveigar\perfectveigar\common.h(123): warning C4305: '*=': truncation from 'double' to 'float'
+c:\users\todd\documents\visual studio 2015\projects\perfectveigar\perfectveigar\common.h(211): warning C4800: 'int': forcing value to bool 'true' or 'false' (performance warning)
+  PerfectVeigar.vcxproj -> c:\users\todd\documents\visual studio 2015\Projects\PerfectVeigar\Debug\PerfectVeigar.dll

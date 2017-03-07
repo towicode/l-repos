@@ -1,0 +1,4 @@
+﻿  Source.cpp
+c:\users\todd\documents\visual studio 2015\projects\antiafk\antiafk\source.cpp(42): warning C4800: 'int': forcing value to bool 'true' or 'false' (performance warning)
+c:\users\todd\documents\visual studio 2015\projects\antiafk\antiafk\source.cpp(82): warning C4715: 'GetAvaliableItem': not all control paths return a value
+  antiAfk.vcxproj -> c:\users\todd\documents\visual studio 2015\Projects\antiAfk\Debug\antiAfk.dll
